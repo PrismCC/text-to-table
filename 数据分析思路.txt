@@ -1,0 +1,20 @@
+Table Example:
+
+| Team                | Record   | Points |
+|---------------------|----------|--------|
+| Atlanta Hawks       | 46 - 12  | 95     |
+| Orlando Magic       | 19 - 41  | 88     |
+
+| Player              | Team                | Points | Rebounds | Assists | Steals |
+|---------------------|---------------------|--------|----------|---------|--------|
+| Al Horford          | Atlanta Hawks       | 17     | 13       | 4       | 2      |
+| Nikola Vucevic      | Orlando Magic       | 21     | 15       | 0       | 0      |
+| Jeff Teague         | Atlanta Hawks       | 17     | 1        | 7       | 2      |
+| Kyle Korver         | Atlanta Hawks       | 8      | 4        | 0       | 0      |
+
+分析角度: 
+1. 从各支队伍在每场比赛的得分分析出平均得分数, 方差, 以及胜率等等, 再将所有球队进行比较(柱状图)
+2. 分析单个球员在各方面的数据, 包括Points, Rebounds, Assists, Steals(雷达图)
+3. 分析一支球队中各成员的数据, 对团队的贡献率(饼图)
+4. 对数据前列的球员给出综合分数, 进行排名(条形图)
+5. 根据时间对每支球队的得分变动进行分析(折线图)
