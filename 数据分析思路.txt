@@ -18,3 +18,12 @@ Table Example:
 3. 分析一支球队中各成员的数据, 对团队的贡献率(饼图)
 4. 对数据前列的球员给出综合分数, 进行排名(条形图)
 5. 根据时间对每支球队的得分变动进行分析(折线图)
+
+选择的队伍: 
+Atlanta Hawks
+Orlando Magic
+Washington Wizards
+Brooklyn Nets
+New York Knicks
+Portland Trail Blazers
+Memphis Grizzlies
