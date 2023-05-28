@@ -6,10 +6,13 @@ import numpy as np
 plt.rcParams['figure.dpi'] = 200
 plt.rcParams['font.family'] = 'Consolas'
 
+# 颜色库
 colors = ['#FF817D', '#FFCDD5', '#FFCAA1', '#FFEFA0', '#CBEF96', '#BAFFF8', '#C5E4FF', '#DDC2FF', '#F8D3FF']
+# 球员名
 player_name = ['Aka', 'Bob', 'Chris', 'Daniel', 'Evan', 'Frank', 'George']
 
 
+# 绘制饼图
 def pie_draw():
     pie_num = 5
     player_points = np.random.randint(5, 30, pie_num)
@@ -22,6 +25,7 @@ def pie_draw():
     plt.show()
 
 
+# 绘制雷达图
 def radar_draw():
     radar_num = 5
     single_data = np.random.randint(5, 20, radar_num)
@@ -33,7 +37,7 @@ def radar_draw():
     single_color = random.choice(colors)
     ax = plt.subplot(111, polar=True)
     ax.plot(angle, single_data, 'o-', linewidth=0.8, color=single_color, alpha=0.4)
-    ax.fill(angle,single_data,alpha=0.15,color=single_color)
+    ax.fill(angle, single_data, alpha=0.15, color=single_color)
     ax.set_thetagrids(angle * 180 / np.pi, labels=radar_label)
     ax.set_theta_zero_location('N')
     ax.set_rlim(0, 25)

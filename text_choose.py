@@ -1,3 +1,4 @@
+# 从文件中挑选段落
 def choose_text(filename, teams):
     # 打开文件并读取内容
     with open(filename, 'r', encoding='utf-8') as f:
@@ -16,6 +17,7 @@ def choose_text(filename, teams):
             if team in first_sentence:
                 two += [team]
         if len(two) == 2:
+            # 选择在同时出现在teams中两两对决的比赛
             a_vs_b = two[0] + '-' + two[1]
             if not a_vs_b in vs_info:
                 vs_info.append(two[0] + '-' + two[1])
@@ -25,10 +27,12 @@ def choose_text(filename, teams):
 
 
 if __name__ == '__main__':
+    # 选择队伍
     teams = ['Atlanta Hawks', 'Orlando Magic', 'Washington Wizards', 'Brooklyn Nets', 'New York Knicks',
              'Portland Trail Blazers', 'Memphis Grizzlies']
     check, result_list = choose_text('rotowire.txt', teams)
     print(len(check))
+    # 比赛对决双方概览
     check.sort()
     for i in check:
         print(i)
