@@ -17,6 +17,8 @@ def construct_from_split_and_newline(table, split, newline):
             skip = True
             tmp_row = []
         else:
+            if content != "":
+                content += ' '
             content += element
     res.append(tmp_row)
     return res

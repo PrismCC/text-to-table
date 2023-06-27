@@ -191,10 +191,6 @@ python $( dirname $0 )/gpt2_decode.py $x.hyp $x.text
 因此，这段代码的意义为：将 `bpe` 化、待喂给模型的 `xxx.bpe.text` 文件喂给模型，
 并将转化为表格后的 `xxx.out` 逆 `bpe` 化，所得的 `xxx.out.text` 文件即为我们所需的表格。
 
-我们可以看到，用来测试的样本经过 `bpe` 化（暂且这么说）后的文件，即 `test.bpe.text`，被传入。
-最后输出 `test_vanilla.out` 文件，再经过 `convert_fairseq_output_to_text.sh` 
-将 `bpe` 化的输出转为可供日后分析的表格文件。
-
 3. 检验
 ``` bash
 for table in Team Player; do

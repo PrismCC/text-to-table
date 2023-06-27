@@ -96,12 +96,12 @@ Team: <NEWLINE> |  | Losses | Total points | Wins | <NEWLINE> | Hawks | 12 | 95 
 
 `teams_table` 结构：
 ``` python
-[['Teams', 'Losses', 'Totalpoints', 'Wins'], ['Hawks', '12', '95', '46'], ['Magic', '41', '88', '19']]
+[['Teams', 'Losses', 'Total points', 'Wins'], ['Hawks', '12', '95', '46'], ['Magic', '41', '88', '19']]
 ```
 
 `players_table` 结构：
 ``` python
-[['Players', 'Assists', 'Points', 'Totalrebounds', 'Steals'], ['NikolaVucevic', '', '21', '15', ''], ['AlHorford', '4', '17', '13', '2'], ['JeffTeague', '7', '17', '', '2']]
+[['Players', 'Assists', 'Points', 'Total rebounds', 'Steals'], ['Nikola Vucevic', '', '21', '15', ''], ['Al Horford', '4', '17', '13', '2'], ['Jeff Teague', '7', '17', '', '2']]
 ```
 
 获得到对应列表后可进一步执行下面的操作。

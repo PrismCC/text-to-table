@@ -1,7 +1,3 @@
-#!/bin/bash
-
-PATH=/usr/bin:/usr/sbin
-
 input_file=${1:-"to_transform.text"}
 output_file=${2:-"out.data"}
 ckpt=${3:-"checkpoints/checkpoint_average_best-3.pt"}
