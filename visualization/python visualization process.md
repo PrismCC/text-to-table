@@ -6,6 +6,14 @@
 + matplotlib: 图表绘制
 + PIL: 图像处理
 
+可视化成果位于[visualization/picture/python](picture/python/)中
+
+分析与可视化的python代码位于[visualization/src](src/)中
+
+分析资料位于[visualization/src/table](src/table/)中
+
+分析的中期文件和可视化结果位于[visualization/src/output](src/output/)中
+
 ### 文本挑选
 
 虽然rotowire.txt中有五百多篇文本, 但要从其中挑选出20篇适合数据分析的文本也并非容易. 文本的挑选首先要解决如下问题: 
@@ -62,7 +70,7 @@
 
 此外, 还需要对每一局比赛的具体状况, 激烈程度, 两队优劣进行呈现, 因此在处理球队数据的同时也绘制了两张图片team_pic1和team_pic2, 经过合并后形成team_pic: 
 
-![](../picture/python/team_pic.png)
+![](./picture/python/team_pic.png)
 
 上面一张图片代表着每一局的激烈程度, 比赛越激烈方格越红, 根据该局双方的总得分数计算, 因此该图像是对称的. 
 
@@ -82,21 +90,21 @@
 
 + 饼图: 由team函数汇总teams.csv中各球队数据(注意到这里对少比了一场的Wizards和Grizzlies进行了补正), 并且调用了pie_draw函数分别绘制了各队获胜数和得分数占总体比例的饼图: 
 
-  ![](../picture/python/winner_pie.png)
+  ![](./picture/python/winner_pie.png)
 
-![](../picture/python/points_pie.png)
+![](./picture/python/points_pie.png)
 
 + 水平条形图: 在top_players函数中, 如法炮制汇总前九名球员的数据并根据ability points进行排名调用barh_draw函数绘制水平条形图, 注意到这里各球员的颜色代表着所属的队伍, 与饼图颜色相同, 红色代表Hawks, 橙色Magic, 黄色Nets, 绿色Wizards, 青色Trail Blaze, 蓝色Grizzlies, 紫色Knicks.
 
-  ![](../picture/python/top-nine player.png)
+  ![](./picture/python/top-nine player.png)
 
 + 雷达图: 使用single_player挑选出三名样本较多的球员Brook Lopez, Nikola Vucevic, Al Horford进行单独分析, 同样用到了scores, assists, rebounds, steals这四个数据, 以及根据每次比赛points的数值计算出方差从而得到球员的稳定性, 根据这五项数据调用radar_draw绘制球员的能力雷达图, 由此球员的各项能力以及互相之间的差别比较一目了然. 
 
-  ![](../picture/python/Data of Brook Lopez.png)
+  ![](./picture/python/Data of Brook Lopez.png)
 
-![](../picture/python/Data of Nikola Vucevic.png)
+![](./picture/python/Data of Nikola Vucevic.png)
 
-![](../picture/python/Data of Al Horford.png)
+![](./picture/python/Data of Al Horford.png)
 
 
 
